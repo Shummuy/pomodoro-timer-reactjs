@@ -1,10 +1,10 @@
 :root {
-  --red: #f54e4e;
-  --green: #4aec8c;
+  --red: #ba4949;
+  --green: #38858a;
 }
 
 body {
-  background-color: #30384b;
+  background-color: #232936;
   color: #eee;
 }
 
@@ -36,6 +36,20 @@ button.with-text svg {
   width: 36px;
   float: left;
   margin-right: 5px;
+}
+
+button.stgs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75px;
+}
+
+button.backBtn {
+  width: 75px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
 }
 
 label {

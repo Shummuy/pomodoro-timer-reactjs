@@ -7,8 +7,8 @@ import { useContext, useState, useEffect, useRef } from 'react';
 import SettingsContext from './SettingsContext';
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 
-const red = '#f54e4e';
-const green = '#4aec8c';
+const red = '#ba4949';
+const green = '#38858a';
 
 function Timer() {
     const settingsInfo = useContext(SettingsContext);
@@ -58,7 +58,7 @@ function Timer() {
             }
 
             tick();
-        }, 1000)
+        }, 10)
 
         return () => clearInterval(interval);
     }, [settingsInfo]);
@@ -78,11 +78,11 @@ function Timer() {
         <div>
             <CircularProgressbarWithChildren value={percentage} 
             // text={minutes + ':' + seconds} 
-            strokeWidth={1.5}
+            strokeWidth={1}
             styles={buildStyles({
                 textColor:'#fff',
                 pathColor:mode === 'work' ? red : green,
-                tailColor:'rgba(255,255,255,0.2)',
+                trailColor:'rgba(255,255,255,0.2)',
                 strokeLinecap: 'butt',
             })}>
                 <div style={{marginTop:'20px'}}>
