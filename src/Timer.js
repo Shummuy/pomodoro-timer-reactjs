@@ -1,11 +1,11 @@
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+// import { CircularProgressbar,  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import PauseButton from './PauseButton';
 import PlayButton from './PlayButton';
 import SettingsButton from './SettingsButton';
 import { useContext, useState, useEffect, useRef } from 'react';
 import SettingsContext from './SettingsContext';
-import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 
 const red = '#f54e4e';
 const green = '#4aec8c';
