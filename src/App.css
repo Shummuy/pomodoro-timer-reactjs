@@ -1,11 +1,19 @@
 :root {
-  --red: #ba4949;
-  --green: #38858a;
+  --red: #fff;
+  --green: #fff;
 }
 
 body {
   background-color: #232936;
   color: #eee;
+}
+
+.work {
+  background-color: #ba4949;
+}
+
+.break {
+  background-color: #38858a;
 }
 
 main {
